@@ -1,4 +1,4 @@
-#Defination
+# Defination
 LLD or low-level design is a component-level design process that follows step by step refinement process,
 LLD, or Low-Level Design, is a phase in the software development process where detailed system components,
 and their interactions are specified. It involves converting the high-level design into a more detailed blueprint,

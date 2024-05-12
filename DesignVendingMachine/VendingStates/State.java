@@ -3,6 +3,7 @@ package DesignVendingMachine.VendingStates;
 import DesignVendingMachine.VendingMachine;
 import DesignVendingMachine.Coin;
 import DesignVendingMachine.Item;
+import java.util.List;
 
 public interface State {
 

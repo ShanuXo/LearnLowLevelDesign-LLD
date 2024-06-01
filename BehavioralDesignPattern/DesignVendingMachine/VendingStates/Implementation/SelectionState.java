@@ -44,7 +44,7 @@ public class SelectionState implements State {
             refundFullMoney(machine);
             throw new Exception("Insufficient amount");
         } else if (paidByUser >= item.getPrice()) {
-            if (paidByUser > kitem.getPrice()) {
+            if (paidByUser > item.getPrice()) {
                 getChange(paidByUser - item.getPrice());
             }
             machine.setVendingMachineState(new DispenseState(machine, codeNumber));

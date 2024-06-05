@@ -4,6 +4,7 @@ import DesignVendingMachine.Coin;
 import DesignVendingMachine.Item;
 import DesignVendingMachine.VendingStates.State;
 import DesignVendingMachine.VendingMachine;
+import java.util.List;
 
 public class DispenseState implements State {
     public DispenseState(VendingMachine machine, int codeNumber) throws Exception {

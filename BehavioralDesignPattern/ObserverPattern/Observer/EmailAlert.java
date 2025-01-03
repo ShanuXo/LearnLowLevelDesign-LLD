@@ -10,14 +10,14 @@ public class EmailAlert implements NotificationAlert {
         this.emailAddress = emailAddress;
         this.observable = observable;
     }
+    public void sendMail(String emailAddress, String msg) {
+        System.out.println(emailAddress + " : " + msg);
+    }
 
     @Override
     public void update() {
         sendMail(emailAddress, "Product is in stock hurry up");
     }
 
-    public void sendMail(String emailAddress, String msg) {
-        System.out.println("mail Sent to -> " + emailAddress);
-    }
 
 }

@@ -10,13 +10,11 @@ public class MobileAlert implements NotificationAlert {
         this.userMobileNumber = userMobileNumber;
         this.observable = observable;
     }
-
+    public void sendMsgOnMobile(String userMobileNumber, String msg) {
+        System.out.println(userMobileNumber + " : " + msg);
+    }
     @Override
     public void update() {
         sendMsgOnMobile(userMobileNumber, "Product is in stock hurry up");
-    }
-
-    public void sendMsgOnMobile(String userMobileNumber, String msg) {
-        System.out.println("sms Sent to -> " + userMobileNumber);
     }
 }
